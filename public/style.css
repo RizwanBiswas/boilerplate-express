@@ -6,18 +6,18 @@
 }
 
 :root {
-    --primary-gold: #C9A961;
-    --dark-gold: #B8923A;
-    --light-gold: #D4AF37;
+    --primary-gold: #8B6914;
+    --dark-gold: #6B4E0F;
+    --light-gold: #A0792C;
     --smokey-black: #0a0a0a;
     --charcoal: #1a1a1a;
     --dark-grey: #2a2a2a;
     --mid-grey: #3a3a3a;
     --light-grey: #4a4a4a;
-    --text-gold: #E8D4A0;
+    --text-gold: #A0792C;
     --text-light: #f5f5f5;
     --text-muted: #999;
-    --accent-gold: #FFD700;
+    --accent-gold: #B8860B;
     --cream: #F5F0E8;
 }
 
@@ -26,7 +26,7 @@ html {
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     color: var(--text-light);
     line-height: 1.6;
     overflow-x: hidden;
@@ -34,8 +34,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
     color: var(--primary-gold);
 }
 
@@ -503,10 +503,10 @@ section {
 /* Menu Header */
 .menu-header {
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    padding: 30px 0;
+    padding: 15px 0;
 }
 
 .menu-header::before,
@@ -529,16 +529,16 @@ section {
 }
 
 .menu-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 56px;
-    font-weight: 700;
-    color: #C9A961;
-    margin-bottom: 12px;
+    font-family: 'Cinzel', serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: var(--primary-gold);
+    margin-bottom: 8px;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     text-shadow:
-        0 0 20px rgba(201, 169, 97, 0.4),
-        0 0 40px rgba(201, 169, 97, 0.2),
+        0 0 15px rgba(139, 105, 20, 0.4),
+        0 0 30px rgba(139, 105, 20, 0.2),
         2px 2px 4px rgba(0, 0, 0, 0.8);
     position: relative;
 }
@@ -569,14 +569,14 @@ section {
 }
 
 .menu-subtitle {
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    color: #C9A961;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    color: var(--primary-gold);
     letter-spacing: 2px;
-    opacity: 0.8;
+    opacity: 0.9;
     font-style: italic;
     position: relative;
-    padding: 10px 0;
+    padding: 5px 0;
 }
 
 .menu-subtitle::before,
@@ -591,19 +591,19 @@ section {
 .menu-book {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px;
     position: relative;
     z-index: 2;
-    max-height: 60vh;
+    max-height: 65vh;
     overflow: hidden;
 }
 
 .menu-page {
-    padding: 40px 50px;
+    padding: 20px 30px;
     background:
-        radial-gradient(circle at 20% 30%, rgba(201, 169, 97, 0.03) 0%, transparent 50%),
-        radial-gradient(circle at 80% 70%, rgba(201, 169, 97, 0.03) 0%, transparent 50%),
-        linear-gradient(135deg, rgba(139, 105, 49, 0.08) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(139, 105, 49, 0.08) 100%);
+        radial-gradient(circle at 20% 30%, rgba(139, 105, 20, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(139, 105, 20, 0.03) 0%, transparent 50%),
+        linear-gradient(135deg, rgba(107, 78, 15, 0.08) 0%, rgba(0, 0, 0, 0.9) 50%, rgba(107, 78, 15, 0.08) 100%);
     position: relative;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -640,11 +640,11 @@ section {
 
 /* Menu Sections */
 .menu-section {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
-    padding: 25px 20px;
-    background: linear-gradient(180deg, rgba(201, 169, 97, 0.02) 0%, transparent 20%, transparent 80%, rgba(201, 169, 97, 0.02) 100%);
-    border: 1px solid rgba(201, 169, 97, 0.1);
+    padding: 12px 15px;
+    background: linear-gradient(180deg, rgba(139, 105, 20, 0.02) 0%, transparent 20%, transparent 80%, rgba(139, 105, 20, 0.02) 100%);
+    border: 1px solid rgba(139, 105, 20, 0.1);
     border-radius: 4px;
 }
 
@@ -676,16 +676,16 @@ section {
 }
 
 .section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 28px;
-    color: #C9A961;
-    margin-bottom: 25px;
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    color: var(--primary-gold);
+    margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: center;
     position: relative;
-    padding-bottom: 18px;
-    text-shadow: 0 0 20px rgba(201, 169, 97, 0.3);
+    padding-bottom: 10px;
+    text-shadow: 0 0 15px rgba(139, 105, 20, 0.3);
 }
 
 .section-title::before {
@@ -727,9 +727,9 @@ section {
 .menu-item {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     position: relative;
-    padding: 8px 10px;
+    padding: 6px 8px;
     transition: all 0.3s ease;
 }
 
@@ -750,14 +750,14 @@ section {
 }
 
 .item-name {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 16px;
-    color: #C9A961;
-    font-weight: 400;
+    color: var(--primary-gold);
+    font-weight: 500;
     white-space: nowrap;
-    padding-right: 12px;
+    padding-right: 10px;
     position: relative;
-    text-shadow: 0 0 10px rgba(201, 169, 97, 0.2);
+    text-shadow: 0 0 10px rgba(139, 105, 20, 0.2);
 }
 
 .item-name::before {
@@ -804,13 +804,13 @@ section {
 }
 
 .item-price {
-    font-family: 'Lato', sans-serif;
-    font-size: 17px;
-    color: #C9A961;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: var(--primary-gold);
     font-weight: 600;
-    padding-left: 12px;
+    padding-left: 10px;
     white-space: nowrap;
-    text-shadow: 0 0 10px rgba(201, 169, 97, 0.3);
+    text-shadow: 0 0 10px rgba(139, 105, 20, 0.3);
     letter-spacing: 0.5px;
 }
 
@@ -860,10 +860,10 @@ section {
 /* Menu Footer */
 .menu-footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     position: relative;
     z-index: 2;
-    padding: 40px 0 20px;
+    padding: 20px 0 10px;
 }
 
 .menu-footer::before {
@@ -891,23 +891,23 @@ section {
 
 .full-menu-button {
     display: inline-block;
-    padding: 18px 60px;
+    padding: 14px 50px;
     background:
-        linear-gradient(135deg, rgba(201, 169, 97, 0.1) 0%, transparent 50%, rgba(201, 169, 97, 0.1) 100%);
-    color: #C9A961;
+        linear-gradient(135deg, rgba(139, 105, 20, 0.1) 0%, transparent 50%, rgba(139, 105, 20, 0.1) 100%);
+    color: var(--primary-gold);
     text-decoration: none;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
-    border: 2px solid #C9A961;
+    border: 2px solid var(--primary-gold);
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Cinzel', serif;
     box-shadow:
-        0 0 20px rgba(201, 169, 97, 0.2),
-        inset 0 0 20px rgba(201, 169, 97, 0.05);
+        0 0 20px rgba(139, 105, 20, 0.2),
+        inset 0 0 20px rgba(139, 105, 20, 0.05);
 }
 
 .full-menu-button::before {
