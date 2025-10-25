@@ -103,45 +103,150 @@
                         <stop offset="50%" style="stop-color:#C9A961;stop-opacity:1" />
                         <stop offset="100%" style="stop-color:#8B6914;stop-opacity:1" />
                     </linearGradient>
+                    <radialGradient id="rosette" cx="50%" cy="50%">
+                        <stop offset="0%" style="stop-color:#E8D4A0;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#C9A961;stop-opacity:0.8" />
+                    </radialGradient>
                 </defs>
 
-                <!-- Top Border with Curves and Scrollwork -->
-                <path d="M 50 30 Q 100 10, 150 30 T 250 30 T 350 30 T 450 30 T 550 30 T 650 30 T 750 30 T 850 30 T 950 30 T 1050 30 T 1150 30 T 1250 30 Q 1300 10, 1350 30"
-                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
-                <circle cx="700" cy="20" r="8" fill="#C9A961"/>
+                <!-- Main Double Border Frame -->
+                <rect x="40" y="20" width="1320" height="860"
+                      stroke="url(#goldGradient)" stroke-width="2" fill="none" rx="4"/>
+                <rect x="48" y="28" width="1304" height="844"
+                      stroke="#C9A961" stroke-width="1" fill="none" opacity="0.5" rx="3"/>
 
-                <!-- Left Border with Ornamental Curves -->
-                <path d="M 50 30 Q 30 100, 50 170 T 50 310 T 50 450 T 50 590 T 50 730 Q 30 800, 50 870"
-                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
-                <circle cx="50" cy="450" r="6" fill="#C9A961"/>
-                <path d="M 60 200 Q 80 220, 60 240" stroke="#C9A961" stroke-width="1.5" fill="none"/>
-                <path d="M 60 400 Q 80 420, 60 440" stroke="#C9A961" stroke-width="1.5" fill="none"/>
-                <path d="M 60 600 Q 80 620, 60 640" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <!-- Top Border with Elaborate Scrollwork -->
+                <path d="M 50 35 Q 80 20, 110 35 Q 140 50, 170 35 Q 200 20, 230 35 Q 260 50, 290 35 Q 320 20, 350 35"
+                      stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
+                <path d="M 1050 35 Q 1080 20, 1110 35 Q 1140 50, 1170 35 Q 1200 20, 1230 35 Q 1260 50, 1290 35 Q 1320 20, 1350 35"
+                      stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
 
-                <!-- Right Border with Ornamental Curves -->
-                <path d="M 1350 30 Q 1370 100, 1350 170 T 1350 310 T 1350 450 T 1350 590 T 1350 730 Q 1370 800, 1350 870"
-                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
-                <circle cx="1350" cy="450" r="6" fill="#C9A961"/>
-                <path d="M 1340 200 Q 1320 220, 1340 240" stroke="#C9A961" stroke-width="1.5" fill="none"/>
-                <path d="M 1340 400 Q 1320 420, 1340 440" stroke="#C9A961" stroke-width="1.5" fill="none"/>
-                <path d="M 1340 600 Q 1320 620, 1340 640" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <!-- Intricate Top Center Crown Ornament -->
+                <circle cx="700" cy="25" r="12" fill="url(#rosette)" stroke="#C9A961" stroke-width="1.5"/>
+                <circle cx="700" cy="25" r="8" fill="none" stroke="#8B6914" stroke-width="1"/>
+                <circle cx="700" cy="25" r="4" fill="#FFD700"/>
+                <path d="M 660 30 Q 670 15, 680 30 Q 690 15, 700 30 Q 710 15, 720 30 Q 730 15, 740 30"
+                      stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 650 35 Q 660 25, 670 35" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <path d="M 730 35 Q 740 25, 750 35" stroke="#C9A961" stroke-width="1.5" fill="none"/>
 
-                <!-- Bottom Border with Curves -->
-                <path d="M 50 870 Q 100 890, 150 870 T 250 870 T 350 870 T 450 870 T 550 870 T 650 870 T 750 870 T 850 870 T 950 870 T 1050 870 T 1150 870 T 1250 870 Q 1300 890, 1350 870"
-                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
-                <circle cx="700" cy="880" r="8" fill="#C9A961"/>
+                <!-- Elaborate Left Border with Filigree -->
+                <path d="M 50 40 Q 35 80, 45 120 Q 40 160, 50 200 Q 35 240, 45 280 Q 40 320, 50 360 Q 35 400, 45 440 Q 40 480, 50 520 Q 35 560, 45 600 Q 40 640, 50 680 Q 35 720, 45 760 Q 40 800, 50 840 Q 35 860, 50 880"
+                      stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
 
-                <!-- Corner Flourishes -->
-                <path d="M 50 30 Q 40 40, 50 50" stroke="#C9A961" stroke-width="2" fill="none"/>
-                <path d="M 1350 30 Q 1360 40, 1350 50" stroke="#C9A961" stroke-width="2" fill="none"/>
-                <path d="M 50 870 Q 40 860, 50 850" stroke="#C9A961" stroke-width="2" fill="none"/>
-                <path d="M 1350 870 Q 1360 860, 1350 850" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <!-- Left Side Rosettes and Ornaments -->
+                <circle cx="50" cy="150" r="8" fill="url(#rosette)" stroke="#C9A961" stroke-width="1"/>
+                <circle cx="50" cy="150" r="4" fill="none" stroke="#8B6914" stroke-width="0.8"/>
+                <path d="M 60 200 Q 85 215, 80 240 Q 75 260, 60 250" stroke="#C9A961" stroke-width="1.8" fill="none"/>
+                <path d="M 65 210 Q 75 220, 70 235" stroke="#C9A961" stroke-width="1" fill="none"/>
 
-                <!-- Center Top Ornament (Mansion Gate Crown) -->
-                <path d="M 680 30 Q 670 40, 680 50 Q 690 40, 700 50 Q 710 40, 720 50 Q 730 40, 720 30" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <circle cx="50" cy="300" r="10" fill="url(#rosette)" stroke="#C9A961" stroke-width="1.5"/>
+                <circle cx="50" cy="300" r="6" fill="none" stroke="#8B6914" stroke-width="1"/>
+                <circle cx="50" cy="300" r="3" fill="#FFD700"/>
+                <path d="M 60 350 Q 90 365, 85 395 Q 75 420, 60 405" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 65 360 Q 80 372, 77 390" stroke="#C9A961" stroke-width="1.2" fill="none"/>
 
-                <!-- Center Divider (Book Spine) -->
-                <line x1="700" y1="60" x2="700" y2="840" stroke="#C9A961" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
+                <circle cx="50" cy="450" r="12" fill="url(#rosette)" stroke="#C9A961" stroke-width="2"/>
+                <circle cx="50" cy="450" r="8" fill="none" stroke="#8B6914" stroke-width="1.2"/>
+                <circle cx="50" cy="450" r="4" fill="#FFD700"/>
+                <path d="M 60 500 Q 85 515, 80 540 Q 75 560, 60 550" stroke="#C9A961" stroke-width="1.8" fill="none"/>
+                <path d="M 65 510 Q 75 520, 70 535" stroke="#C9A961" stroke-width="1" fill="none"/>
+
+                <circle cx="50" cy="600" r="8" fill="url(#rosette)" stroke="#C9A961" stroke-width="1"/>
+                <circle cx="50" cy="600" r="4" fill="none" stroke="#8B6914" stroke-width="0.8"/>
+                <path d="M 60 650 Q 90 665, 85 695 Q 75 720, 60 705" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 65 660 Q 80 672, 77 690" stroke="#C9A961" stroke-width="1.2" fill="none"/>
+
+                <circle cx="50" cy="750" r="10" fill="url(#rosette)" stroke="#C9A961" stroke-width="1.5"/>
+                <circle cx="50" cy="750" r="6" fill="none" stroke="#8B6914" stroke-width="1"/>
+                <circle cx="50" cy="750" r="3" fill="#FFD700"/>
+
+                <!-- Elaborate Right Border with Filigree (Mirrored) -->
+                <path d="M 1350 40 Q 1365 80, 1355 120 Q 1360 160, 1350 200 Q 1365 240, 1355 280 Q 1360 320, 1350 360 Q 1365 400, 1355 440 Q 1360 480, 1350 520 Q 1365 560, 1355 600 Q 1360 640, 1350 680 Q 1365 720, 1355 760 Q 1360 800, 1350 840 Q 1365 860, 1350 880"
+                      stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
+
+                <!-- Right Side Rosettes and Ornaments (Mirrored) -->
+                <circle cx="1350" cy="150" r="8" fill="url(#rosette)" stroke="#C9A961" stroke-width="1"/>
+                <circle cx="1350" cy="150" r="4" fill="none" stroke="#8B6914" stroke-width="0.8"/>
+                <path d="M 1340 200 Q 1315 215, 1320 240 Q 1325 260, 1340 250" stroke="#C9A961" stroke-width="1.8" fill="none"/>
+                <path d="M 1335 210 Q 1325 220, 1330 235" stroke="#C9A961" stroke-width="1" fill="none"/>
+
+                <circle cx="1350" cy="300" r="10" fill="url(#rosette)" stroke="#C9A961" stroke-width="1.5"/>
+                <circle cx="1350" cy="300" r="6" fill="none" stroke="#8B6914" stroke-width="1"/>
+                <circle cx="1350" cy="300" r="3" fill="#FFD700"/>
+                <path d="M 1340 350 Q 1310 365, 1315 395 Q 1325 420, 1340 405" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 1335 360 Q 1320 372, 1323 390" stroke="#C9A961" stroke-width="1.2" fill="none"/>
+
+                <circle cx="1350" cy="450" r="12" fill="url(#rosette)" stroke="#C9A961" stroke-width="2"/>
+                <circle cx="1350" cy="450" r="8" fill="none" stroke="#8B6914" stroke-width="1.2"/>
+                <circle cx="1350" cy="450" r="4" fill="#FFD700"/>
+                <path d="M 1340 500 Q 1315 515, 1320 540 Q 1325 560, 1340 550" stroke="#C9A961" stroke-width="1.8" fill="none"/>
+                <path d="M 1335 510 Q 1325 520, 1330 535" stroke="#C9A961" stroke-width="1" fill="none"/>
+
+                <circle cx="1350" cy="600" r="8" fill="url(#rosette)" stroke="#C9A961" stroke-width="1"/>
+                <circle cx="1350" cy="600" r="4" fill="none" stroke="#8B6914" stroke-width="0.8"/>
+                <path d="M 1340 650 Q 1310 665, 1315 695 Q 1325 720, 1340 705" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 1335 660 Q 1320 672, 1323 690" stroke="#C9A961" stroke-width="1.2" fill="none"/>
+
+                <circle cx="1350" cy="750" r="10" fill="url(#rosette)" stroke="#C9A961" stroke-width="1.5"/>
+                <circle cx="1350" cy="750" r="6" fill="none" stroke="#8B6914" stroke-width="1"/>
+                <circle cx="1350" cy="750" r="3" fill="#FFD700"/>
+
+                <!-- Bottom Border with Elaborate Curves -->
+                <path d="M 50 865 Q 80 880, 110 865 Q 140 850, 170 865 Q 200 880, 230 865 Q 260 850, 290 865 Q 320 880, 350 865"
+                      stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
+                <path d="M 1050 865 Q 1080 880, 1110 865 Q 1140 850, 1170 865 Q 1200 880, 1230 865 Q 1260 850, 1290 865 Q 1320 880, 1350 865"
+                      stroke="url(#goldGradient)" stroke-width="2.5" fill="none"/>
+
+                <!-- Bottom Center Ornament -->
+                <circle cx="700" cy="875" r="12" fill="url(#rosette)" stroke="#C9A961" stroke-width="1.5"/>
+                <circle cx="700" cy="875" r="8" fill="none" stroke="#8B6914" stroke-width="1"/>
+                <circle cx="700" cy="875" r="4" fill="#FFD700"/>
+
+                <!-- Elaborate Corner Flourishes -->
+                <!-- Top Left Corner -->
+                <path d="M 50 30 Q 40 35, 45 45 Q 35 50, 50 60" stroke="#C9A961" stroke-width="2.5" fill="none"/>
+                <path d="M 55 35 Q 60 40, 55 45" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <circle cx="65" cy="50" r="3" fill="#C9A961" opacity="0.7"/>
+                <path d="M 70 40 Q 85 45, 90 55 Q 85 65, 75 60" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+
+                <!-- Top Right Corner -->
+                <path d="M 1350 30 Q 1360 35, 1355 45 Q 1365 50, 1350 60" stroke="#C9A961" stroke-width="2.5" fill="none"/>
+                <path d="M 1345 35 Q 1340 40, 1345 45" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <circle cx="1335" cy="50" r="3" fill="#C9A961" opacity="0.7"/>
+                <path d="M 1330 40 Q 1315 45, 1310 55 Q 1315 65, 1325 60" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+
+                <!-- Bottom Left Corner -->
+                <path d="M 50 870 Q 40 865, 45 855 Q 35 850, 50 840" stroke="#C9A961" stroke-width="2.5" fill="none"/>
+                <path d="M 55 865 Q 60 860, 55 855" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <circle cx="65" cy="850" r="3" fill="#C9A961" opacity="0.7"/>
+                <path d="M 70 860 Q 85 855, 90 845 Q 85 835, 75 840" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+
+                <!-- Bottom Right Corner -->
+                <path d="M 1350 870 Q 1360 865, 1355 855 Q 1365 850, 1350 840" stroke="#C9A961" stroke-width="2.5" fill="none"/>
+                <path d="M 1345 865 Q 1340 860, 1345 855" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <circle cx="1335" cy="850" r="3" fill="#C9A961" opacity="0.7"/>
+                <path d="M 1330 860 Q 1315 855, 1310 845 Q 1315 835, 1325 840" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+
+                <!-- Ornate Center Divider (Book Spine) with Decoration -->
+                <line x1="700" y1="60" x2="700" y2="840" stroke="#C9A961" stroke-width="1.5" opacity="0.4"/>
+                <line x1="698" y1="60" x2="698" y2="840" stroke="#8B6914" stroke-width="0.5" opacity="0.3"/>
+                <line x1="702" y1="60" x2="702" y2="840" stroke="#8B6914" stroke-width="0.5" opacity="0.3"/>
+
+                <!-- Center Spine Decorative Diamonds -->
+                <circle cx="700" cy="150" r="4" fill="#C9A961" opacity="0.6"/>
+                <circle cx="700" cy="300" r="5" fill="#C9A961" opacity="0.6"/>
+                <circle cx="700" cy="450" r="6" fill="#FFD700" opacity="0.8"/>
+                <circle cx="700" cy="600" r="5" fill="#C9A961" opacity="0.6"/>
+                <circle cx="700" cy="750" r="4" fill="#C9A961" opacity="0.6"/>
+
+                <!-- Additional Filigree Details -->
+                <path d="M 120 50 Q 130 55, 135 65" stroke="#C9A961" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <path d="M 200 50 Q 210 55, 215 65" stroke="#C9A961" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <path d="M 280 50 Q 290 55, 295 65" stroke="#C9A961" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <path d="M 1280 50 Q 1270 55, 1265 65" stroke="#C9A961" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <path d="M 1200 50 Q 1190 55, 1185 65" stroke="#C9A961" stroke-width="0.8" fill="none" opacity="0.5"/>
+                <path d="M 1120 50 Q 1110 55, 1105 65" stroke="#C9A961" stroke-width="0.8" fill="none" opacity="0.5"/>
             </svg>
 
             <!-- Menu Header -->
