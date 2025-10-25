@@ -1,50 +1,15 @@
 
 var express = require('express');
 var app = express();
+var path = require('path');
 
-// --> 7)  Mount the Logger middleware here
+// Serve static files from the 'public' directory
+app.use('/public', express.static(path.join(__dirname, 'public')));
 
-
-// --> 11)  Mount the body-parser middleware  here
-
-
-/** 1) Meet the node console. */
-
-
-/** 2) A first working Express Server */
-
-
-/** 3) Serve an HTML file */
-
-
-/** 4) Serve static assets  */
-
-
-/** 5) serve JSON on a specific route */
-
-
-/** 6) Use the .env file to configure the app */
- 
- 
-/** 7) Root-level Middleware - A logger */
-//  place it before all the routes !
-
-
-/** 8) Chaining middleware. A Time server */
-
-
-/** 9)  Get input from client - Route parameters */
-
-
-/** 10) Get input from client - Query parameters */
-// /name?first=<firstname>&last=<lastname>
-
-  
-/** 11) Get ready for POST Requests - the `body-parser` */
-// place it before all the routes !
-
-
-/** 12) Get data form POST  */
+// Serve the main page
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname, 'views', 'index.html'));
+});
 
 
 
