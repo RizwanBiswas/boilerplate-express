@@ -6,7 +6,6 @@
 }
 
 :root {
-    /* Elegant dark theme with gold accents */
     --primary-gold: #C9A961;
     --dark-gold: #B8923A;
     --light-gold: #D4AF37;
@@ -19,6 +18,7 @@
     --text-light: #f5f5f5;
     --text-muted: #999;
     --accent-gold: #FFD700;
+    --cream: #F5F0E8;
 }
 
 html {
@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 .butterfly {
     position: absolute;
     font-size: 18px;
-    opacity: 0.25;
+    opacity: 0.15;
     animation: float 25s infinite ease-in-out;
 }
 
@@ -73,19 +73,19 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes float {
     0%, 100% {
         transform: translateY(0) translateX(0) rotate(0deg);
-        opacity: 0.1;
+        opacity: 0.05;
     }
     25% {
         transform: translateY(-30vh) translateX(20px) rotate(5deg);
-        opacity: 0.25;
+        opacity: 0.15;
     }
     50% {
         transform: translateY(-60vh) translateX(-20px) rotate(-5deg);
-        opacity: 0.2;
+        opacity: 0.1;
     }
     75% {
         transform: translateY(-90vh) translateX(30px) rotate(8deg);
-        opacity: 0.15;
+        opacity: 0.08;
     }
     100% {
         transform: translateY(-100vh) translateX(0) rotate(0deg);
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 .leaf {
     position: absolute;
     font-size: 14px;
-    opacity: 0.2;
+    opacity: 0.15;
     color: var(--primary-gold);
     animation: drift 30s infinite ease-in-out;
 }
@@ -111,10 +111,10 @@ h1, h2, h3, h4, h5, h6 {
         opacity: 0;
     }
     10% {
-        opacity: 0.2;
+        opacity: 0.15;
     }
     90% {
-        opacity: 0.15;
+        opacity: 0.1;
     }
     100% {
         transform: translateY(110vh) translateX(50px) rotate(360deg);
@@ -470,7 +470,7 @@ section {
     color: var(--text-muted);
 }
 
-/* ===== PREMIUM MENU BOOKLET DESIGN ===== */
+/* ===== VICTORIAN HENNA-ART MENU DESIGN ===== */
 .menu {
     background: var(--smokey-black);
     position: relative;
@@ -478,128 +478,342 @@ section {
 }
 
 .menu .section-header {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .menu-booklet {
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto;
     position: relative;
-    background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
-    padding: 50px 60px;
+    background: linear-gradient(135deg, #1c1612 0%, #0d0b09 100%);
+    padding: 60px 70px;
     box-shadow:
-        0 20px 60px rgba(0, 0, 0, 0.9),
-        inset 0 1px 0 rgba(201, 169, 97, 0.3);
+        0 0 0 1px rgba(201, 169, 97, 0.3),
+        0 0 0 2px rgba(10, 10, 10, 0.8),
+        0 0 0 3px rgba(201, 169, 97, 0.2),
+        0 20px 60px rgba(0, 0, 0, 0.9);
 }
 
-/* Ornate Floral Corner Roses */
+/* Victorian Corner Flourishes - CSS Art */
 .menu-booklet::before,
-.menu-booklet::after,
+.menu-booklet::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--primary-gold);
+    opacity: 0.6;
+}
+
+.menu-booklet::before {
+    top: 20px;
+    left: 20px;
+    border-right: none;
+    border-bottom: none;
+    background:
+        radial-gradient(circle at 0% 0%, var(--primary-gold) 1px, transparent 1px),
+        radial-gradient(circle at 20% 0%, var(--primary-gold) 1px, transparent 1px),
+        radial-gradient(circle at 0% 20%, var(--primary-gold) 1px, transparent 1px);
+}
+
+.menu-booklet::after {
+    top: 20px;
+    right: 20px;
+    border-left: none;
+    border-bottom: none;
+    background:
+        radial-gradient(circle at 100% 0%, var(--primary-gold) 1px, transparent 1px),
+        radial-gradient(circle at 80% 0%, var(--primary-gold) 1px, transparent 1px),
+        radial-gradient(circle at 100% 20%, var(--primary-gold) 1px, transparent 1px);
+}
+
+/* Ornate Corner Decorations */
 .menu-corner-top-left,
 .menu-corner-top-right,
 .menu-corner-bottom-left,
 .menu-corner-bottom-right {
     position: absolute;
-    font-size: 80px;
-    color: var(--primary-gold);
-    opacity: 0.4;
-    line-height: 1;
+    width: 100px;
+    height: 100px;
     pointer-events: none;
 }
 
 .menu-corner-top-left {
-    top: -15px;
-    left: -15px;
-    transform: rotate(0deg);
+    top: 10px;
+    left: 10px;
+    background:
+        linear-gradient(90deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(0deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(135deg, transparent 48%, var(--primary-gold) 48%, var(--primary-gold) 52%, transparent 52%);
+    background-size: 10px 10px, 10px 10px, 20px 20px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.menu-corner-top-left::before,
+.menu-corner-top-left::after {
+    content: '';
+    position: absolute;
+    background: var(--primary-gold);
+    opacity: 0.5;
+}
+
+.menu-corner-top-left::before {
+    top: 15px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    box-shadow: 0 3px 0 var(--primary-gold), 0 6px 0 var(--primary-gold);
+}
+
+.menu-corner-top-left::after {
+    top: 0;
+    left: 15px;
+    width: 1px;
+    height: 40px;
+    box-shadow: 3px 0 0 var(--primary-gold), 6px 0 0 var(--primary-gold);
 }
 
 .menu-corner-top-right {
-    top: -15px;
-    right: -15px;
-    transform: rotate(90deg);
+    top: 10px;
+    right: 10px;
+    transform: scaleX(-1);
+    background:
+        linear-gradient(90deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(0deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(135deg, transparent 48%, var(--primary-gold) 48%, var(--primary-gold) 52%, transparent 52%);
+    background-size: 10px 10px, 10px 10px, 20px 20px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.menu-corner-top-right::before,
+.menu-corner-top-right::after {
+    content: '';
+    position: absolute;
+    background: var(--primary-gold);
+    opacity: 0.5;
+}
+
+.menu-corner-top-right::before {
+    top: 15px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    box-shadow: 0 3px 0 var(--primary-gold), 0 6px 0 var(--primary-gold);
+}
+
+.menu-corner-top-right::after {
+    top: 0;
+    left: 15px;
+    width: 1px;
+    height: 40px;
+    box-shadow: 3px 0 0 var(--primary-gold), 6px 0 0 var(--primary-gold);
 }
 
 .menu-corner-bottom-left {
-    bottom: -15px;
-    left: -15px;
-    transform: rotate(-90deg);
+    bottom: 10px;
+    left: 10px;
+    transform: scaleY(-1);
+    background:
+        linear-gradient(90deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(0deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(135deg, transparent 48%, var(--primary-gold) 48%, var(--primary-gold) 52%, transparent 52%);
+    background-size: 10px 10px, 10px 10px, 20px 20px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.menu-corner-bottom-left::before,
+.menu-corner-bottom-left::after {
+    content: '';
+    position: absolute;
+    background: var(--primary-gold);
+    opacity: 0.5;
+}
+
+.menu-corner-bottom-left::before {
+    top: 15px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    box-shadow: 0 3px 0 var(--primary-gold), 0 6px 0 var(--primary-gold);
+}
+
+.menu-corner-bottom-left::after {
+    top: 0;
+    left: 15px;
+    width: 1px;
+    height: 40px;
+    box-shadow: 3px 0 0 var(--primary-gold), 6px 0 0 var(--primary-gold);
 }
 
 .menu-corner-bottom-right {
-    bottom: -15px;
-    right: -15px;
-    transform: rotate(180deg);
+    bottom: 10px;
+    right: 10px;
+    transform: scale(-1);
+    background:
+        linear-gradient(90deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(0deg, var(--primary-gold) 1px, transparent 1px) 0 0,
+        linear-gradient(135deg, transparent 48%, var(--primary-gold) 48%, var(--primary-gold) 52%, transparent 52%);
+    background-size: 10px 10px, 10px 10px, 20px 20px;
+    background-repeat: no-repeat;
+    opacity: 0.3;
 }
 
-/* Inner decorative border */
+.menu-corner-bottom-right::before,
+.menu-corner-bottom-right::after {
+    content: '';
+    position: absolute;
+    background: var(--primary-gold);
+    opacity: 0.5;
+}
+
+.menu-corner-bottom-right::before {
+    top: 15px;
+    left: 0;
+    width: 40px;
+    height: 1px;
+    box-shadow: 0 3px 0 var(--primary-gold), 0 6px 0 var(--primary-gold);
+}
+
+.menu-corner-bottom-right::after {
+    top: 0;
+    left: 15px;
+    width: 1px;
+    height: 40px;
+    box-shadow: 3px 0 0 var(--primary-gold), 6px 0 0 var(--primary-gold);
+}
+
+/* Ornate Side Borders */
+.menu-side-rose-left,
+.menu-side-rose-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 200px;
+    background: repeating-linear-gradient(
+        0deg,
+        var(--primary-gold) 0px,
+        var(--primary-gold) 8px,
+        transparent 8px,
+        transparent 12px
+    );
+    opacity: 0.3;
+}
+
+.menu-side-rose-left {
+    left: 35px;
+}
+
+.menu-side-rose-left::before,
+.menu-side-rose-left::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--primary-gold);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-side-rose-left::before {
+    top: -6px;
+}
+
+.menu-side-rose-left::after {
+    bottom: -6px;
+}
+
+.menu-side-rose-right {
+    right: 35px;
+}
+
+.menu-side-rose-right::before,
+.menu-side-rose-right::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--primary-gold);
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu-side-rose-right::before {
+    top: -6px;
+}
+
+.menu-side-rose-right::after {
+    bottom: -6px;
+}
+
+/* Inner Decorative Border - Henna Pattern */
 .menu-inner-border {
     position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border: 1px solid rgba(201, 169, 97, 0.3);
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    bottom: 30px;
+    border: 1px solid rgba(201, 169, 97, 0.25);
     pointer-events: none;
 }
 
 .menu-inner-border::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border: 1px solid rgba(201, 169, 97, 0.15);
-}
-
-/* Decorative side roses */
-.menu-side-rose-left,
-.menu-side-rose-right {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    color: var(--primary-gold);
-    opacity: 0.25;
-}
-
-.menu-side-rose-left {
-    left: -10px;
-}
-
-.menu-side-rose-right {
-    right: -10px;
-    transform: translateY(-50%) scaleX(-1);
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px dashed rgba(201, 169, 97, 0.15);
 }
 
 /* Menu Header */
 .menu-booklet-header {
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(201, 169, 97, 0.2);
+    margin-bottom: 45px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgba(201, 169, 97, 0.3);
+    position: relative;
+}
+
+.menu-booklet-header::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
 }
 
 .menu-booklet-title {
-    font-size: 36px;
+    font-size: 42px;
     color: var(--primary-gold);
-    letter-spacing: 3px;
-    margin-bottom: 8px;
-    text-shadow: 0 0 15px rgba(201, 169, 97, 0.3);
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    text-shadow: 0 0 20px rgba(201, 169, 97, 0.4);
+    text-transform: uppercase;
 }
 
 .menu-booklet-subtitle {
     font-size: 14px;
-    color: var(--text-muted);
-    letter-spacing: 2px;
+    color: var(--text-gold);
+    letter-spacing: 3px;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
+    font-weight: 300;
 }
 
 /* Menu Categories */
 .menu-categories {
     display: grid;
-    gap: 35px;
+    gap: 40px;
 }
 
 .menu-category {
@@ -607,116 +821,194 @@ section {
 }
 
 .category-title {
-    font-size: 24px;
+    font-size: 26px;
     color: var(--primary-gold);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: center;
     position: relative;
-    letter-spacing: 2px;
-    padding-bottom: 12px;
+    letter-spacing: 3px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
 }
 
-.category-title::after {
-    content: '◆';
+.category-title::before {
+    content: '';
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 12px;
+    width: 60px;
+    height: 1px;
+    background: var(--primary-gold);
+    box-shadow: 0 3px 0 rgba(201, 169, 97, 0.5);
+}
+
+.category-title::after {
+    content: '❖';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
     color: var(--primary-gold);
-    opacity: 0.6;
+    background: #1c1612;
+    padding: 0 10px;
 }
 
 /* Menu Items */
 .menu-items {
     display: grid;
-    gap: 18px;
+    gap: 20px;
 }
 
 .menu-item {
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(201, 169, 97, 0.1);
+    padding: 18px 0;
+    border-bottom: 1px dotted rgba(201, 169, 97, 0.2);
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .menu-item:last-child {
     border-bottom: none;
 }
 
+.menu-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 1px;
+    background: var(--primary-gold);
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover::before {
+    width: 30px;
+}
+
 .menu-item:hover {
-    padding-left: 10px;
+    padding-left: 40px;
 }
 
 .menu-item.featured {
-    background: linear-gradient(90deg, rgba(201, 169, 97, 0.05) 0%, transparent 100%);
-    padding: 18px 15px;
-    border-left: 2px solid var(--primary-gold);
-    border-bottom: 1px solid rgba(201, 169, 97, 0.15);
+    background: linear-gradient(90deg, rgba(201, 169, 97, 0.08) 0%, transparent 50%, rgba(201, 169, 97, 0.08) 100%);
+    padding: 20px 20px;
+    border: 1px solid rgba(201, 169, 97, 0.25);
+    border-left: 3px solid var(--primary-gold);
+    border-right: 3px solid var(--primary-gold);
+    position: relative;
+}
+
+.menu-item.featured::before {
+    display: none;
+}
+
+.menu-item.featured::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 1px dashed rgba(201, 169, 97, 0.15);
+    pointer-events: none;
 }
 
 .item-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 6px;
-    gap: 15px;
+    margin-bottom: 8px;
+    gap: 20px;
 }
 
 .item-header h4 {
-    font-size: 18px;
+    font-size: 19px;
     color: var(--text-gold);
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     flex: 1;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
 .signature {
     font-size: 9px;
     background: var(--primary-gold);
     color: var(--smokey-black);
-    padding: 3px 8px;
+    padding: 4px 10px;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-family: 'Lato', sans-serif;
+    border-radius: 2px;
 }
 
 .price {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 19px;
+    font-weight: 700;
     color: var(--primary-gold);
     white-space: nowrap;
+    font-family: 'Playfair Display', serif;
 }
 
 .item-description {
     color: var(--text-muted);
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.6;
     padding-left: 0;
+    font-style: italic;
+}
+
+/* Ornate Divider between categories */
+.menu-category + .menu-category::before {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
+    margin: 0 auto 40px;
+    position: relative;
+    top: -40px;
 }
 
 /* See Full Menu Button */
 .menu-button-container {
     text-align: center;
-    margin-top: 40px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(201, 169, 97, 0.2);
+    margin-top: 50px;
+    padding-top: 35px;
+    border-top: 2px solid rgba(201, 169, 97, 0.3);
+    position: relative;
+}
+
+.menu-button-container::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
 }
 
 .full-menu-button {
     display: inline-block;
-    padding: 14px 45px;
+    padding: 16px 50px;
     background: transparent;
     color: var(--primary-gold);
     text-decoration: none;
     font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 13px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    border: 1.5px solid var(--primary-gold);
+    border: 2px solid var(--primary-gold);
     transition: all 0.4s ease;
     position: relative;
     overflow: hidden;
+    box-shadow: inset 0 0 0 1px rgba(201, 169, 97, 0.3);
 }
 
 .full-menu-button::before {
@@ -737,7 +1029,7 @@ section {
 
 .full-menu-button:hover {
     color: var(--smokey-black);
-    box-shadow: 0 0 25px rgba(201, 169, 97, 0.5);
+    box-shadow: 0 0 30px rgba(201, 169, 97, 0.6);
 }
 
 /* ===== Gallery Section ===== */
@@ -1111,14 +1403,15 @@ section {
     }
 
     .menu-booklet {
-        padding: 35px 30px;
+        padding: 40px 35px;
     }
 
     .menu-corner-top-left,
     .menu-corner-top-right,
     .menu-corner-bottom-left,
     .menu-corner-bottom-right {
-        font-size: 60px;
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -1140,11 +1433,11 @@ section {
     }
 
     .menu-booklet-title {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     .category-title {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .reservation-form .form-row {
@@ -1164,13 +1457,19 @@ section {
     }
 
     .menu-booklet {
-        padding: 25px 20px;
+        padding: 30px 25px;
     }
 
     .menu-corner-top-left,
     .menu-corner-top-right,
     .menu-corner-bottom-left,
     .menu-corner-bottom-right {
-        font-size: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu-side-rose-left,
+    .menu-side-rose-right {
+        display: none;
     }
 }
