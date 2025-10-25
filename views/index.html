@@ -92,125 +92,157 @@
         </div>
     </section>
 
-    <!-- Menu Section with Victorian Borders -->
+    <!-- Menu Section - Gordon Ramsay Style -->
     <section id="menu" class="menu">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Menu</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">A celebration of Bengal's culinary heritage</p>
+        <div class="menu-container">
+            <!-- Ornate Victorian Gate Border (SVG) -->
+            <svg class="menu-gate-border" viewBox="0 0 1400 900" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#8B6914;stop-opacity:1" />
+                        <stop offset="50%" style="stop-color:#C9A961;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#8B6914;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+
+                <!-- Top Border with Curves and Scrollwork -->
+                <path d="M 50 30 Q 100 10, 150 30 T 250 30 T 350 30 T 450 30 T 550 30 T 650 30 T 750 30 T 850 30 T 950 30 T 1050 30 T 1150 30 T 1250 30 Q 1300 10, 1350 30"
+                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+                <circle cx="700" cy="20" r="8" fill="#C9A961"/>
+
+                <!-- Left Border with Ornamental Curves -->
+                <path d="M 50 30 Q 30 100, 50 170 T 50 310 T 50 450 T 50 590 T 50 730 Q 30 800, 50 870"
+                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+                <circle cx="50" cy="450" r="6" fill="#C9A961"/>
+                <path d="M 60 200 Q 80 220, 60 240" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <path d="M 60 400 Q 80 420, 60 440" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <path d="M 60 600 Q 80 620, 60 640" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+
+                <!-- Right Border with Ornamental Curves -->
+                <path d="M 1350 30 Q 1370 100, 1350 170 T 1350 310 T 1350 450 T 1350 590 T 1350 730 Q 1370 800, 1350 870"
+                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+                <circle cx="1350" cy="450" r="6" fill="#C9A961"/>
+                <path d="M 1340 200 Q 1320 220, 1340 240" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <path d="M 1340 400 Q 1320 420, 1340 440" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                <path d="M 1340 600 Q 1320 620, 1340 640" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+
+                <!-- Bottom Border with Curves -->
+                <path d="M 50 870 Q 100 890, 150 870 T 250 870 T 350 870 T 450 870 T 550 870 T 650 870 T 750 870 T 850 870 T 950 870 T 1050 870 T 1150 870 T 1250 870 Q 1300 890, 1350 870"
+                      stroke="url(#goldGradient)" stroke-width="2" fill="none"/>
+                <circle cx="700" cy="880" r="8" fill="#C9A961"/>
+
+                <!-- Corner Flourishes -->
+                <path d="M 50 30 Q 40 40, 50 50" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 1350 30 Q 1360 40, 1350 50" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 50 870 Q 40 860, 50 850" stroke="#C9A961" stroke-width="2" fill="none"/>
+                <path d="M 1350 870 Q 1360 860, 1350 850" stroke="#C9A961" stroke-width="2" fill="none"/>
+
+                <!-- Center Top Ornament (Mansion Gate Crown) -->
+                <path d="M 680 30 Q 670 40, 680 50 Q 690 40, 700 50 Q 710 40, 720 50 Q 730 40, 720 30" stroke="#C9A961" stroke-width="2" fill="none"/>
+
+                <!-- Center Divider (Book Spine) -->
+                <line x1="700" y1="60" x2="700" y2="840" stroke="#C9A961" stroke-width="1" opacity="0.3" stroke-dasharray="5,5"/>
+            </svg>
+
+            <!-- Menu Header -->
+            <div class="menu-header">
+                <h2 class="menu-title">Culinary Selections</h2>
+                <p class="menu-subtitle">Bengali Heritage & Modern Excellence</p>
             </div>
 
-            <div class="menu-booklet">
-                <!-- Victorian Henna-Art Corner Flourishes (CSS Art) -->
-                <div class="menu-corner-top-left"></div>
-                <div class="menu-corner-top-right"></div>
-                <div class="menu-corner-bottom-left"></div>
-                <div class="menu-corner-bottom-right"></div>
-
-                <!-- Ornate Side Borders -->
-                <div class="menu-side-rose-left"></div>
-                <div class="menu-side-rose-right"></div>
-
-                <!-- Inner Decorative Border - Henna Pattern -->
-                <div class="menu-inner-border"></div>
-
-                <!-- Menu Header -->
-                <div class="menu-booklet-header">
-                    <h2 class="menu-booklet-title">Culinary Selections</h2>
-                    <p class="menu-booklet-subtitle">Bengali Heritage & Modern Excellence</p>
-                </div>
-
-                <div class="menu-categories">
-                    <!-- Appetizers -->
-                    <div class="menu-category">
-                        <h3 class="category-title">Appetizers</h3>
-                        <div class="menu-items">
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Beguni</h4>
-                                    <span class="price">$12</span>
-                                </div>
-                                <p class="item-description">Crispy eggplant fritters with a delicate spiced batter, served with kasundi mustard sauce</p>
-                            </div>
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Dimer Devil</h4>
-                                    <span class="price">$14</span>
-                                </div>
-                                <p class="item-description">Spiced egg croquettes with a golden breadcrumb coating, a Bengali street food classic</p>
-                            </div>
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Chingri Cutlet</h4>
-                                    <span class="price">$18</span>
-                                </div>
-                                <p class="item-description">Succulent prawn cutlets infused with Bengali five-spice</p>
-                            </div>
+            <!-- Two-Page Layout -->
+            <div class="menu-book">
+                <!-- Left Page -->
+                <div class="menu-page left-page">
+                    <div class="menu-section">
+                        <h3 class="section-title">Appetizers</h3>
+                        <div class="menu-item">
+                            <div class="item-name">Beguni</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$12</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Dimer Devil</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$14</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Chingri Cutlet</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$18</div>
                         </div>
                     </div>
 
-                    <!-- Main Courses -->
-                    <div class="menu-category">
-                        <h3 class="category-title">Main Courses</h3>
-                        <div class="menu-items">
-                            <div class="menu-item featured">
-                                <div class="item-header">
-                                    <h4>Chingri Malai Curry <span class="signature">SIGNATURE</span></h4>
-                                    <span class="price">$38</span>
-                                </div>
-                                <p class="item-description">Tiger prawns in a luxurious coconut cream sauce with aromatic spices</p>
-                            </div>
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Ilish Bhapa</h4>
-                                    <span class="price">$42</span>
-                                </div>
-                                <p class="item-description">Steamed hilsa fish marinated in mustard and coconut, wrapped in banana leaf</p>
-                            </div>
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Kosha Mangsho</h4>
-                                    <span class="price">$35</span>
-                                </div>
-                                <p class="item-description">Slow-cooked mutton in a rich, spiced gravy with caramelized onions</p>
-                            </div>
+                    <div class="menu-section">
+                        <h3 class="section-title">Main Courses</h3>
+                        <div class="menu-item signature">
+                            <div class="item-name">Chingri Malai Curry <span class="star">★</span></div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$38</div>
                         </div>
-                    </div>
-
-                    <!-- Desserts -->
-                    <div class="menu-category">
-                        <h3 class="category-title">Desserts</h3>
-                        <div class="menu-items">
-                            <div class="menu-item featured">
-                                <div class="item-header">
-                                    <h4>Rosogolla <span class="signature">CHEF'S SPECIAL</span></h4>
-                                    <span class="price">$10</span>
-                                </div>
-                                <p class="item-description">Artisanal cottage cheese dumplings in cardamom-scented syrup</p>
-                            </div>
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Mishti Doi</h4>
-                                    <span class="price">$12</span>
-                                </div>
-                                <p class="item-description">Sweetened yogurt in traditional earthen pots, caramelized to perfection</p>
-                            </div>
-                            <div class="menu-item">
-                                <div class="item-header">
-                                    <h4>Sandesh Platter</h4>
-                                    <span class="price">$15</span>
-                                </div>
-                                <p class="item-description">Assorted cottage cheese confections with saffron, pistachio, and rose</p>
-                            </div>
+                        <div class="menu-item">
+                            <div class="item-name">Ilish Bhapa</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$42</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Kosha Mangsho</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$35</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Bhapa Doi</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$28</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- See Full Menu Button -->
-                <div class="menu-button-container">
-                    <a href="#" class="full-menu-button">See Full Menu</a>
+                <!-- Right Page -->
+                <div class="menu-page right-page">
+                    <div class="menu-section">
+                        <h3 class="section-title">Desserts</h3>
+                        <div class="menu-item signature">
+                            <div class="item-name">Rosogolla <span class="star">★</span></div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$10</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Mishti Doi</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$12</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Sandesh Platter</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$15</div>
+                        </div>
+                    </div>
+
+                    <div class="menu-section">
+                        <h3 class="section-title">Beverages</h3>
+                        <div class="menu-item">
+                            <div class="item-name">Masala Chai</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$6</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Lassi</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$8</div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="item-name">Bengali Lemonade</div>
+                            <div class="item-dots"></div>
+                            <div class="item-price">$7</div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <!-- Full Menu Button -->
+            <div class="menu-footer">
+                <a href="#" class="full-menu-button">View Complete Menu</a>
             </div>
         </div>
     </section>
