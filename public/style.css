@@ -249,11 +249,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Classic Art Frame Container */
 .art-frame-container {
     position: relative;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.art-frame-border {
+.art-frame-png {
     width: 100%;
     height: auto;
     position: absolute;
@@ -262,13 +262,17 @@ h1, h2, h3, h4, h5, h6 {
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 1;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.7));
+    filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.8))
+            brightness(0.85)
+            sepia(0.3)
+            saturate(1.2);
+    opacity: 0.95;
 }
 
 .hero-frame-content {
     position: relative;
     z-index: 2;
-    padding: 80px 100px;
+    padding: 100px 120px;
     text-align: center;
 }
 
