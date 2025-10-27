@@ -512,7 +512,7 @@ section {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    padding: 70px 20px 40px;
+    padding: 100px 20px 40px;
 }
 
 /* Ornate Victorian Gate Border SVG */
@@ -1008,7 +1008,7 @@ section {
     }
     
     .menu-container {
-        padding: 30px 15px;
+        padding: 60px 15px 30px;
     }
     
     .menu-title {
