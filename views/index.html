@@ -46,11 +46,89 @@
     <section id="home" class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <div class="michelin-star">&#9733;</div>
-            <h1 class="hero-title">Adda Bangla Cafe</h1>
-            <p class="hero-subtitle">An Authentic Bengali Culinary Journey</p>
-            <p class="hero-description">Michelin Star Excellence Meets Traditional Bengali Flavors</p>
-            <a href="#reservations" class="cta-button">Reserve Your Table</a>
+            <!-- Classic Art Frame -->
+            <div class="art-frame-container">
+                <svg class="art-frame-border" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="heroGoldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#6B4E0F;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#8B6914;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#6B4E0F;stop-opacity:1" />
+                        </linearGradient>
+                        <radialGradient id="heroRosette" cx="50%" cy="50%">
+                            <stop offset="0%" style="stop-color:#A0792C;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#8B6914;stop-opacity:0.8" />
+                        </radialGradient>
+                    </defs>
+
+                    <!-- Outer ornate frame -->
+                    <rect x="30" y="30" width="740" height="540"
+                          stroke="url(#heroGoldGradient)" stroke-width="8" fill="none" rx="8"/>
+                    <rect x="40" y="40" width="720" height="520"
+                          stroke="#8B6914" stroke-width="3" fill="none" rx="6" opacity="0.6"/>
+                    <rect x="50" y="50" width="700" height="500"
+                          stroke="url(#heroGoldGradient)" stroke-width="2" fill="none" rx="4" opacity="0.4"/>
+
+                    <!-- Top ornamental flourish -->
+                    <circle cx="400" cy="35" r="15" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="2"/>
+                    <circle cx="400" cy="35" r="10" fill="none" stroke="#6B4E0F" stroke-width="1.5"/>
+                    <circle cx="400" cy="35" r="5" fill="#B8860B"/>
+                    <path d="M 370 40 Q 380 25, 390 40 Q 395 30, 400 40 Q 405 30, 410 40 Q 420 25, 430 40"
+                          stroke="#8B6914" stroke-width="2.5" fill="none"/>
+
+                    <!-- Bottom ornamental flourish -->
+                    <circle cx="400" cy="565" r="15" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="2"/>
+                    <circle cx="400" cy="565" r="10" fill="none" stroke="#6B4E0F" stroke-width="1.5"/>
+                    <circle cx="400" cy="565" r="5" fill="#B8860B"/>
+                    <path d="M 370 560 Q 380 575, 390 560 Q 395 570, 400 560 Q 405 570, 410 560 Q 420 575, 430 560"
+                          stroke="#8B6914" stroke-width="2.5" fill="none"/>
+
+                    <!-- Corner ornaments - Top Left -->
+                    <circle cx="60" cy="60" r="12" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="2"/>
+                    <circle cx="60" cy="60" r="7" fill="none" stroke="#6B4E0F" stroke-width="1"/>
+                    <path d="M 70 70 Q 90 75, 95 85" stroke="#8B6914" stroke-width="2" fill="none"/>
+                    <path d="M 50 70 Q 45 85, 35 90" stroke="#8B6914" stroke-width="2" fill="none"/>
+
+                    <!-- Corner ornaments - Top Right -->
+                    <circle cx="740" cy="60" r="12" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="2"/>
+                    <circle cx="740" cy="60" r="7" fill="none" stroke="#6B4E0F" stroke-width="1"/>
+                    <path d="M 730 70 Q 710 75, 705 85" stroke="#8B6914" stroke-width="2" fill="none"/>
+                    <path d="M 750 70 Q 755 85, 765 90" stroke="#8B6914" stroke-width="2" fill="none"/>
+
+                    <!-- Corner ornaments - Bottom Left -->
+                    <circle cx="60" cy="540" r="12" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="2"/>
+                    <circle cx="60" cy="540" r="7" fill="none" stroke="#6B4E0F" stroke-width="1"/>
+                    <path d="M 70 530 Q 90 525, 95 515" stroke="#8B6914" stroke-width="2" fill="none"/>
+                    <path d="M 50 530 Q 45 515, 35 510" stroke="#8B6914" stroke-width="2" fill="none"/>
+
+                    <!-- Corner ornaments - Bottom Right -->
+                    <circle cx="740" cy="540" r="12" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="2"/>
+                    <circle cx="740" cy="540" r="7" fill="none" stroke="#6B4E0F" stroke-width="1"/>
+                    <path d="M 730 530 Q 710 525, 705 515" stroke="#8B6914" stroke-width="2" fill="none"/>
+                    <path d="M 750 530 Q 755 515, 765 510" stroke="#8B6914" stroke-width="2" fill="none"/>
+
+                    <!-- Side ornaments -->
+                    <circle cx="60" cy="300" r="10" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="1.5"/>
+                    <circle cx="60" cy="300" r="5" fill="#B8860B"/>
+                    <circle cx="740" cy="300" r="10" fill="url(#heroRosette)" stroke="#8B6914" stroke-width="1.5"/>
+                    <circle cx="740" cy="300" r="5" fill="#B8860B"/>
+
+                    <!-- Decorative scrollwork on sides -->
+                    <path d="M 50 150 Q 70 155, 75 170 Q 70 185, 50 190" stroke="#8B6914" stroke-width="1.8" fill="none" opacity="0.7"/>
+                    <path d="M 50 410 Q 70 415, 75 430 Q 70 445, 50 450" stroke="#8B6914" stroke-width="1.8" fill="none" opacity="0.7"/>
+                    <path d="M 750 150 Q 730 155, 725 170 Q 730 185, 750 190" stroke="#8B6914" stroke-width="1.8" fill="none" opacity="0.7"/>
+                    <path d="M 750 410 Q 730 415, 725 430 Q 730 445, 750 450" stroke="#8B6914" stroke-width="1.8" fill="none" opacity="0.7"/>
+                </svg>
+
+                <!-- Hero Text inside Frame -->
+                <div class="hero-frame-content">
+                    <div class="michelin-star">&#9733;</div>
+                    <h1 class="hero-title">Adda Bangla Cafe</h1>
+                    <p class="hero-subtitle">An Authentic Bengali Culinary Journey</p>
+                    <p class="hero-description">Michelin Star Excellence Meets Traditional Bengali Flavors</p>
+                    <a href="#reservations" class="cta-button">Reserve Your Table</a>
+                </div>
+            </div>
         </div>
         <div class="scroll-indicator">
             <span>Scroll Down</span>

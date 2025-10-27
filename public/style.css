@@ -246,6 +246,32 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
 }
 
+/* Classic Art Frame Container */
+.art-frame-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.art-frame-border {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.7));
+}
+
+.hero-frame-content {
+    position: relative;
+    z-index: 2;
+    padding: 80px 100px;
+    text-align: center;
+}
+
 .michelin-star {
     font-size: 60px;
     color: var(--accent-gold);
@@ -486,7 +512,7 @@ section {
     width: 95%;
     margin: 0 auto;
     position: relative;
-    padding: 40px 20px;
+    padding: 70px 20px 40px;
 }
 
 /* Ornate Victorian Gate Border SVG */
@@ -1016,6 +1042,18 @@ section {
     .menu-gate-border {
         display: none;
     }
+
+    .hero-frame-content {
+        padding: 60px 50px;
+    }
+
+    .hero-title {
+        font-size: 48px;
+    }
+
+    .hero-subtitle {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1023,18 +1061,38 @@ section {
         font-size: 28px;
         letter-spacing: 2px;
     }
-    
+
     .menu-subtitle {
         font-size: 13px;
     }
-    
+
     .section-title {
         font-size: 20px;
     }
-    
+
     .full-menu-button {
         padding: 14px 35px;
         font-size: 11px;
+    }
+
+    .hero-frame-content {
+        padding: 40px 30px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .michelin-star {
+        font-size: 40px;
+    }
+
+    .art-frame-container {
+        max-width: 100%;
     }
 }
 
